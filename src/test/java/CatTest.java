@@ -34,7 +34,6 @@ public class CatTest {
 
     @Test
     public void foodCatTest() throws Exception {
-        // Задание поведения мок объекта Feline
         Mockito.when(feline.eatMeat()).thenReturn(expectedFood);
         assertEquals(expectedFood, cat.getFood());
     }
